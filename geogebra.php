@@ -11,7 +11,7 @@
         ?>
         
         <main>
-            <p>Coming soon ...</p>
+            <p id="soon">Coming soon ...</p>
         </main>
     </body>
 </html>

@@ -31,7 +31,7 @@
                     height: 95%;
                 }
 
-                main {
+                html, main {
                     background: #000;
                 }
 

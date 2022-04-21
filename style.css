@@ -153,6 +153,11 @@ main {
         padding: 0px;
     }
 
+    #soon {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
     .navbar {
         top: 0;
         width: 100vw;
@@ -350,6 +355,10 @@ main {
     #change-sec {
         margin-top: 80px;
         margin-left: 30px;
+    }
+
+    .iframe-container {
+        margin-top: 100px;
     }
 
 }
@@ -985,23 +994,21 @@ form .btn input[type="submit"]{
 
 
 .iframe-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 2% 0 0 5.5%;
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
+    width: 90%;
+    padding-bottom: 49%; 
 }
-
 .iframe-container iframe{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 95%;
+}
+
+html, main {
+    background: #000;
 }
 
 /*Comment*/
