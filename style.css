@@ -1007,10 +1007,6 @@ form .btn input[type="submit"]{
     height: 95%;
 }
 
-html, main {
-    background: #000;
-}
-
 /*Comment*/
 
 .comment {

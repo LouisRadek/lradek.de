@@ -17,19 +17,6 @@
             </div>
 
             <style>
-                .iframe-container{
-                    margin: 2% 0 0 5.5%;
-                    position: relative;
-                    width: 90%;
-                    padding-bottom: 49%; 
-                }
-                .iframe-container iframe{
-                    position: absolute;
-                    top:0;
-                    left: 0;
-                    width: 100%;
-                    height: 95%;
-                }
 
                 html, main {
                     background: #000;
