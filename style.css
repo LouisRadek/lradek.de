@@ -348,6 +348,28 @@ main {
         background-image: url(icons/waves6.svg);
     }
 
+    .cha {
+        height: 39vw;
+        margin-top: 3vw;
+        margin-left: -0vw;
+    }
+
+    .cer {
+        height: 39vw;
+        margin-top: 3vw;
+        margin-right: 0vw;
+    }
+
+    .cer-text{
+        margin-left: -30vw;
+        font-size: 3vw;
+    }
+
+    .cha2 {
+        height: 40vw;
+        margin-top: 2.5vw;
+    }
+
     .wrapper {
         margin-top: 200px;
     }
@@ -495,6 +517,28 @@ main {
         background-image: url(icons/waves6.svg);
     }
 
+    .cha {
+        height: 25vw;
+        margin-top: 3vw;
+        margin-left: -0vw;
+    }
+
+    .cer {
+        height: 25vw;
+        margin-top: 3vw;
+        margin-right: 0vw;
+    }
+
+    .cer-text{
+        margin-left: -19.5vw;
+        font-size: 1.9vw;
+    }
+
+    .cha2 {
+        height: 25vw;
+        margin-top: 2.5vw;
+    }
+
     .wrapper {
         margin-top: 11.5vw;
     }
@@ -635,6 +679,28 @@ main {
         background-image: url(icons/waves6.svg);
     }
 
+    .cha {
+        height: 14vw;
+        margin-top: 3vw;
+        margin-left: -32vw;
+    }
+    
+    .cer {
+        height: 14vw;
+        margin-top: -13.5vw;
+        margin-right: -35vw;
+    }
+    
+    .cer-text{
+        margin-left: 22.2vw;
+        font-size: 0.8vw;
+    }
+    
+    .cha2 {
+        height: 14vw;
+        margin-top: 2.5vw;
+    }
+
     .wrapper {
         margin-top: 11.5vw;
     }
@@ -689,31 +755,6 @@ ol {
     margin-top: -39px;
     margin-right: -109px;
 }
-
-/*Hackerrank*/
-
-.cha {
-    height: 14vw;
-    margin-top: 3vw;
-    margin-left: -32vw;
-}
-
-.cer {
-    height: 14vw;
-    margin-top: -13.5vw;
-    margin-right: -35vw;
-}
-
-.cer-text{
-    margin-left: 22.2vw;
-    font-size: 0.8vw;
-}
-
-.cha2 {
-    height: 14vw;
-    margin-top: 2.5vw;
-}
-
 
 /*Login*/
 
@@ -1017,6 +1058,12 @@ form .btn input[type="submit"]{
     margin-top: 15px;
     border-style: solid;
     outline: none !important;
+    border-color: lightgrey;
+}
+
+.comment::placeholder {
+    color: darkgrey;
+    padding-left: 8px;
 }
 
 .comment:focus {

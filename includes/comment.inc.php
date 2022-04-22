@@ -15,6 +15,11 @@ if (isset($_POST["submit"])) {
     $comment = $_POST["comment"]; 
     $email = "radek.forgottenpwd@gmail.com";
 
+    if (!isset($_POST["restricted"])) {
+        header("location: ../comment.php?error=none&time=restricted");
+        exit();
+    }
+
     $sql = "INSERT comments(userUid, comment, commentDate) VALUES (?, ?, NOW());";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {

@@ -10,6 +10,7 @@
             include_once 'navbar.php';
             error_reporting(0);
             $currentUser = $_SESSION['userUid'];
+            $restriction = $_GET["error"];
             error_reporting(E_ALL);
         ?>
 
@@ -30,17 +31,25 @@
                             ?>
                                         <form action="includes/comment.inc.php" class="login" method="POST">
                                             <input type="hidden" name="user" value="<?php echo $currentUser ?>">
+                                            <input type="hidden" name="restricted" value="<?php echo $restriction ?>">
                                             <div class="field">
                                                 <textarea class="comment" name="comment" placeholder="Enter a comment..." cols="40" rows="4" required></textarea>
                                             </div>
                                             <?php
                                                 if (isset($_GET["error"])){
-                                                    if ($_GET["error"] == "stmtFailed") {
-                                                       echo '<div style="color:red; text-align:center; margin-top: 135px;">Something went wrong, try again!</div>';
-                                                       echo '<style>#log-btn{ margin: 0; margin-top: 25px;}</style>';
-                                                    } else if ($_GET["error"] == "none") {
-                                                       echo '<div style="color:green; text-align:center; margin-top: 135px;">Comment send!</div>';
-                                                       echo '<style>#log-btn{ margin: 0; margin-top: 25px;}</style>';
+                                                    if (isset($_GET["time"])){
+                                                        if ($_GET["time"] == "restricted") {
+                                                            echo '<div style="color:red; text-align:center; margin-top: 135px;">Only one comment per day!</div>';
+                                                            echo '<style>#log-btn{ margin: 0; margin-top: 25px;}</style>';
+                                                        } 
+                                                    } else {
+                                                        if ($_GET["error"] == "stmtFailed") {
+                                                            echo '<div style="color:red; text-align:center; margin-top: 135px;">Something went wrong, try again!</div>';
+                                                            echo '<style>#log-btn{ margin: 0; margin-top: 25px;}</style>';
+                                                        } else if ($_GET["error"] == "none") {
+                                                            echo '<div style="color:green; text-align:center; margin-top: 135px;">Comment send!</div>';
+                                                            echo '<style>#log-btn{ margin: 0; margin-top: 25px;}</style>';
+                                                        }
                                                     }
                                                 } else {
                                                     echo  '<style>#log-btn {margin-top: 150px;}</style>';
@@ -59,33 +68,6 @@
                 </div>  
             </div>
             <style>
-                .comment {
-                    background: #34343d;
-                    border-radius: 5px;
-                    padding: 4px;
-                    resize: none;
-                    margin-top: 15px;
-                    border-style: solid;
-                    outline: none !important;
-                }
-
-                .comment:focus {
-                    border-color: #6649b8;
-                }
-
-                textarea::-webkit-scrollbar {
-                    width: 0.35rem;
-                    height: 0.35rem;
-                }
-
-                textarea::-webkit-scrollbar-thumb {
-                    background: #6649b8;
-                }
-
-                textarea::-webkit-scrollbar-track {
-                    background: #34343d;
-                }
-
                 .wrapper {
                     max-width: 500px;
                 }
