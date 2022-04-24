@@ -30,6 +30,8 @@ if (isset($_POST["submit"])) {
     mysqli_stmt_bind_param($stmt, "ss", $currentUser, $comment);
     mysqli_stmt_execute($stmt);
 
+    $mail = new PHPMailer();
+
     $mail->SMTPDebug = 0;
     $mail->isSMTP();
     $mail->SMTPAuth = "true";

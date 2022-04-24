@@ -72,6 +72,9 @@
                            } else if ($_GET["success"] == "verification") {
                               echo '<div style="color:green; text-align:center;">Now you can log in!</div>';
                               echo "<style> #forgot {margin: 0px;} #log-btn {margin-top: 5px;}</style>";
+                           } else if ($_GET["success"] == "delete") {
+                              echo '<div style="color:green; text-align:center;">Your account got deleted!</div>';
+                              echo "<style> #forgot {margin: 0px;} #log-btn {margin-top: 5px;}</style>";
                            }
                         }
                      ?>

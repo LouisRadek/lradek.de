@@ -26,7 +26,7 @@
                     <form action="includes/reset-name.inc.php" class="reset-name" method="POST">
                         <input type="hidden" name="user" value="<?php echo $currentUser ?>">
                         <div class="field">
-                            <input type="text" name="new-name" id="uid" placeholder="Enter new username" require>
+                            <input type="text" name="new-name" id="uid" placeholder="Enter new username" required>
                         </div>
                         <?php
                             if (isset($_GET["error"])) {
@@ -41,6 +41,16 @@
                         <div class="field btn">
                             <div class="btn-layer"></div>
                             <input type="submit" name="submit" id="submit" value="change username">
+                        </div>
+                    </form>
+                    <form action="includes/deleteAcc.inc.php" class="reset-name" method="POST">
+                        <input type="hidden" name="user" value="<?php echo $currentUser ?>">
+                        <div style="margin: 10px; margin-top: 50px">
+                            <input type="checkbox" name="delete" required>sure to delete your profile?
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" name="submit" id="submit" value="delete account">
                         </div>
                     </form>
                 </div>
