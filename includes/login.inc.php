@@ -12,14 +12,8 @@ if (isset($_POST["submit"])) {
         exit();
     }
 
-    if(verified($conn, $username, $username) !== true) {
-        header("location: ../login.php?error=notVerified&email=" . $username);
-        exit();
-    }
-
-    
-
     loginUser($conn, $username, $pwd);
+
 } else {
     header('location: ../login.php?error=noAccess');
     exit();

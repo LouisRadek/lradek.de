@@ -2,5 +2,4 @@ work to do:
 
 - firefox, Safari
 - login btn bei geringer height nicht sichtbar
-- waves in manchen formaten komisch
 - email ??????????

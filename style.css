@@ -144,571 +144,6 @@ main {
 
 }
 
-/*Smartphone optimization*/
-
-@media (max-width: 599px){
-    main {
-        margin-top: 3rem;
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    #soon {
-        margin-top: 100px;
-        margin-left: 30px;
-    }
-
-    .navbar {
-        top: 0;
-        width: 100vw;
-        height: 5rem;
-    }
-    
-    .navbar-nav {
-        flex-direction: row;
-    }
-    
-    .nav-link {
-        justify-content: center;
-    }
-    
-    .navbar:hover .link-text {
-        display: none;
-    }
-    
-    .navbar {
-        display: block;
-    }
-    
-    .navbar:hover #bar {
-        pointer-events: auto;
-    }
-    
-    #bar {
-        cursor: pointer;
-    }
-    
-    #small {
-        display: none;
-    }
-
-    .dropdown {
-        position: relative;
-        display: block;
-        margin-left: -2.4rem;
-        margin-top: 0.057rem;
-    }
-    
-    .dropdown-bar {
-        display: none;
-        position: absolute;
-        background-color: #34343d;
-        list-style: none;
-        min-width: 17rem;
-        box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.45);
-        margin-top: -4px;
-    }
-    
-    .dropdown-link {
-        z-index: 100;
-        height: 5rem;
-        filter: opacity(0.75);
-        color: var(--text-primary);
-        text-decoration: none;
-        height: 100%;
-        transition: 200ms;
-    }
-    
-    .dropdown-link-text {
-        position: absolute;
-    }
-
-    .dropdown-item {
-        padding-top: 15px;
-    }
-
-    .dropdown-link svg {
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        min-width: 2rem;
-        margin: 0 1.5rem;
-    }
-
-    .dropdown-link:hover{
-        filter: opacity(1);
-    }
-    
-    .dropdown-item:hover{
-        background: var(--bg-secondary);
-    }
-    
-    .dropdown-item:hover .icon {
-        filter: invert(35%) sepia(80%) saturate(591%) hue-rotate(217deg) brightness(84%) contrast(97%);
-        transition: 300ms;
-    }
-    
-    #bar:hover .dropdown-bar{
-        display: block;
-        
-    }
-
-    h1 {
-        margin-top: -60px;
-        margin-right: 10px;
-        font-size: 50px;
-    }
-
-    .sec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 350px;
-        margin-top: 100px;
-        margin-left: 9vw;
-        margin-right: 9vw;
-    }
-
-    #hac {
-        margin-top: 100px;
-    }
-
-    #back {
-        margin-top: 50px;
-    }
-
-    .wave1 {
-        height: 19.5vw;
-        width: 110vw;
-        margin-left: 0px;
-        margin-top: 85px;
-    }
-
-    .wave1{
-        background-image: url(icons/waves1.svg);
-    }
-
-    .wave2 {
-        height: 16.75vw;
-        width: 110vw;
-        margin-bottom: 100px;
-        margin-left: 0px;
-        margin-top: 20px;
-    }
-
-    .wave2{
-        background-image: url(icons/waves2.svg);
-    }
-
-    .wave3 {
-        height: 22.3vw;
-        width: 110vw;
-        margin-bottom: 100px;
-        margin-left: 0px;
-        margin-top: -100px;
-    }
-
-    .wave3{
-        background-image: url(icons/waves3.svg);
-    }
-
-    .wave4 {
-        height: 16.75vh;
-        width: 110vw;
-        margin-bottom: 100px;
-        margin-left: 0px;
-        margin-top: 100px;
-    }
-    
-    .wave4{
-        background-image: url(icons/waves4.svg);
-    }
-
-    .wave5 {
-        height: 22.3vw;
-        width: 110vw;
-        margin-bottom: 100px;
-        margin-left: 0px;
-        margin-top: -100px;
-    }
-    
-    .wave5{
-        background-image: url(icons/waves5.svg);
-    }
-
-    .wave6 {
-        height: 19.5vw;
-        width: 110vw;
-        margin-left: 0px;
-        margin-top: 85px;
-    }
-
-    .wave6{
-        background-image: url(icons/waves6.svg);
-    }
-
-    .cha {
-        height: 39vw;
-        margin-top: 3vw;
-        margin-left: -0vw;
-    }
-
-    .cer {
-        height: 39vw;
-        margin-top: 3vw;
-        margin-right: 0vw;
-    }
-
-    .cer-text{
-        margin-left: -30vw;
-        font-size: 3vw;
-    }
-
-    .cha2 {
-        height: 40vw;
-        margin-top: 2.5vw;
-    }
-
-    .wrapper {
-        margin-top: 200px;
-    }
-
-    #change-sec {
-        margin-top: 80px;
-        margin-left: 30px;
-    }
-
-    .iframe-container {
-        margin-top: 100px;
-    }
-
-}
-
-/*IPads*/
-
-@media (min-width: 600px) {
-
-    main {
-        padding-bottom: 0px;
-    }
-
-    .navbar {
-        top: 0;
-        width: 5rem;
-        height: 100vh;
-    }
-    
-    .navbar:hover {
-        width: 16rem;
-    }
-    
-    .navbar:hover #small {
-        pointer-events: auto;
-    }
-
-    .navbar:hover #log {
-        pointer-events: auto;
-    }
-    
-    .nav-link {
-        pointer-events: none;
-    }
-    
-    #bar {
-        display: none;
-    }
-    
-    .dropdown-bar {
-        display: none;
-    }
-    
-    h1 {
-        margin-top: -40px;
-        font-size: 50px;
-    }
-    
-    .sec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 350px;
-        margin-top: 100px;
-        margin-left: 10vw;
-        margin-right: 9vw;
-    }
-
-    #hac {
-        margin-top: -80px;
-    }
-    
-    #back {
-        margin-top: -120px;
-    }
-    
-    .wave1 {
-        height: 32vh;
-        width: 100vw;
-        margin-left: -20px;
-        margin-top: -17px;
-    }
-    
-    .wave1{
-        background-image: url(icons/waves1.svg);
-    }
-    
-    .wave2 {
-        height: 26.6vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: 20px;
-    }
-    
-    .wave2{
-        background-image: url(icons/waves2.svg);
-    }
-    
-    .wave3 {
-        height: 32vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: -100px;
-    }
-    
-    .wave3{
-        background-image: url(icons/waves3.svg);
-    }
-    
-    .wave4 {
-        height: 26.6vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: 100px;
-    }
-    
-    .wave4{
-        background-image: url(icons/waves4.svg);
-    }
-
-    .wave5 {
-        height: 32vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: -100px;
-    }
-    
-    .wave5{
-        background-image: url(icons/waves5.svg);
-    }
-
-    .wave6 {
-        height: 25vh;
-        width: 100vw;
-        margin-left: -20px;
-        margin-top: 75px;
-    }
-    
-    .wave6 {
-        background-image: url(icons/waves6.svg);
-    }
-
-    .cha {
-        height: 25vw;
-        margin-top: 3vw;
-        margin-left: -0vw;
-    }
-
-    .cer {
-        height: 25vw;
-        margin-top: 3vw;
-        margin-right: 0vw;
-    }
-
-    .cer-text{
-        margin-left: -19.5vw;
-        font-size: 1.9vw;
-    }
-
-    .cha2 {
-        height: 25vw;
-        margin-top: 2.5vw;
-    }
-
-    .wrapper {
-        margin-top: 11.5vw;
-    }
-
-    #wrap-pass-reset {
-        width: 500px;
-    }
-}
-
-/*normal Desktop*/
-
-@media (min-width: 1000px) {
-    main {
-        padding-bottom: 0px;
-    }
-
-    .navbar {
-        top: 0;
-        width: 5rem;
-        height: 100vh;
-    }
-    
-    .navbar:hover {
-        width: 16rem;
-    }
-    
-    .navbar:hover #small {
-        pointer-events: auto;
-    }
-
-    .navbar:hover #log {
-        pointer-events: auto;
-    }
-    
-    .nav-link {
-        pointer-events: none;
-    }
-    
-    #bar {
-        display: none;
-    }
-    
-    .dropdown-bar {
-        display: none;
-    }
-    
-    h1 {
-        margin-top: -40px;
-        font-size: 50px;
-    }
-    
-    .sec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 350px;
-        margin-top: 100px;
-        margin-left: 10vw;
-        margin-right: 9vw;
-    }
-
-    #hac {
-        margin-top: -80px;
-    }
-    
-    #back {
-        margin-top: -120px;
-    }
-    
-    .wave1 {
-        height: 32vh;
-        width: 100vw;
-        margin-left: -20px;
-        margin-top: -17px;
-    }
-    
-    .wave1{
-        background-image: url(icons/waves1.svg);
-    }
-    
-    .wave2 {
-        height: 26.6vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: 20px;
-    }
-    
-    .wave2{
-        background-image: url(icons/waves2.svg);
-    }
-    
-    .wave3 {
-        height: 32vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: -100px;
-    }
-    
-    .wave3{
-        background-image: url(icons/waves3.svg);
-    }
-    
-    .wave4 {
-        height: 26.6vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: 100px;
-    }
-    
-    .wave4{
-        background-image: url(icons/waves4.svg);
-    }
-
-    .wave5 {
-        height: 32vh;
-        width: 100vw;
-        margin-bottom: 100px;
-        margin-left: -20px;
-        margin-top: -100px;
-    }
-    
-    .wave5{
-        background-image: url(icons/waves5.svg);
-    }
-
-    .wave6 {
-        height: 25vh;
-        width: 100vw;
-        margin-left: -20px;
-        margin-top: 75px;
-    }
-    
-    .wave6 {
-        background-image: url(icons/waves6.svg);
-    }
-
-    .cha {
-        height: 14vw;
-        margin-top: 3vw;
-        margin-left: -32vw;
-    }
-    
-    .cer {
-        height: 14vw;
-        margin-top: -13.5vw;
-        margin-right: -35vw;
-    }
-    
-    .cer-text{
-        margin-left: 22.2vw;
-        font-size: 0.8vw;
-    }
-    
-    .cha2 {
-        height: 14vw;
-        margin-top: 2.5vw;
-    }
-
-    .wrapper {
-        margin-top: 11.5vw;
-    }
-
-    #wrap-pass-reset {
-        width: 700px;
-    }
-}
 
 /*Myself*/
 
@@ -1031,23 +466,6 @@ form .btn input[type="submit"]{
     color: red;
 }
 
-/*Home*/
-
-
-.iframe-container{
-    margin: 2% 0 0 5.5%;
-    position: relative;
-    width: 90%;
-    padding-bottom: 49%; 
-}
-.iframe-container iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 95%;
-}
-
 /*Comment*/
 
 .comment {
@@ -1082,4 +500,601 @@ textarea::-webkit-scrollbar-thumb {
 textarea::-webkit-scrollbar-track {
     background: #34343d;
 }
+
+/*Home*/
+
+.iframe-container{
+    margin: 2% 0 0 5.5%;
+    position: relative;
+    width: 90%;
+    padding-bottom: 49%; 
+}
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+}
+
+
+/*Smartphone optimization*/
+
+@media only screen and (max-width: 599px){
+    main {
+        margin-top: 3rem;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    #soon {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
+    .navbar {
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .nav-link {
+        justify-content: center;
+    }
+    
+    .navbar:hover .link-text {
+        display: none;
+    }
+    
+    .navbar {
+        display: block;
+    }
+    
+    .navbar:hover #bar {
+        pointer-events: auto;
+    }
+    
+    #bar {
+        cursor: pointer;
+    }
+    
+    #small {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+        margin-left: -2.4rem;
+        margin-top: 0.057rem;
+    }
+    
+    .dropdown-bar {
+        display: none;
+        position: absolute;
+        background-color: #34343d;
+        list-style: none;
+        min-width: 17rem;
+        box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.45);
+        margin-top: -4px;
+    }
+    
+    .dropdown-link {
+        z-index: 100;
+        height: 5rem;
+        filter: opacity(0.75);
+        color: var(--text-primary);
+        text-decoration: none;
+        height: 100%;
+        transition: 200ms;
+    }
+    
+    .dropdown-link-text {
+        position: absolute;
+    }
+
+    .dropdown-item {
+        padding-top: 15px;
+    }
+
+    .dropdown-link svg {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        margin: 0 1.5rem;
+    }
+
+    .dropdown-link:hover{
+        filter: opacity(1);
+    }
+    
+    .dropdown-item:hover{
+        background: var(--bg-secondary);
+    }
+    
+    .dropdown-item:hover .icon {
+        filter: invert(35%) sepia(80%) saturate(591%) hue-rotate(217deg) brightness(84%) contrast(97%);
+        transition: 300ms;
+    }
+    
+    #bar:hover .dropdown-bar{
+        display: block;
+        
+    }
+
+    h1 {
+        margin-top: -60px;
+        margin-right: 10px;
+        font-size: 50px;
+    }
+
+    .sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 350px;
+        margin-top: 100px;
+        margin-left: 9vw;
+        margin-right: 9vw;
+    }
+
+    #problem h1 {
+        text-align: center;
+    }
+
+    #hac {
+        margin-top: 100px;
+    }
+
+    #back {
+        margin-top: 50px;
+    }
+
+    .wave1 {
+        height: 19.5vw;
+        width: 110vw;
+        margin-left: 0px;
+        margin-top: 85px;
+    }
+
+    .wave1{
+        background-image: url(icons/waves1.svg);
+    }
+
+    .wave2 {
+        height: 16.75vw;
+        width: 110vw;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .wave2{
+        background-image: url(icons/waves2.svg);
+    }
+
+    .wave3 {
+        height: 22.3vw;
+        width: 110vw;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        margin-top: -103px;
+    }
+
+    .wave3{
+        background-image: url(icons/waves3.svg);
+    }
+
+    .wave4 {
+        height: 16.75vh;
+        width: 110vw;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    
+    .wave4{
+        background-image: url(icons/waves4.svg);
+    }
+
+    .wave5 {
+        height: 22.3vw;
+        width: 110vw;
+        margin-bottom: 100px;
+        margin-left: 0px;
+        margin-top: -103px;
+    }
+    
+    .wave5{
+        background-image: url(icons/waves5.svg);
+    }
+
+    .wave6 {
+        height: 19.5vw;
+        width: 110vw;
+        margin-left: 0px;
+        margin-top: 85px;
+    }
+
+    .wave6{
+        background-image: url(icons/waves6.svg);
+    }
+
+    .cha {
+        height: 39vw;
+        margin-top: 3vw;
+        margin-left: -0vw;
+    }
+
+    .cer {
+        height: 39vw;
+        margin-top: 3vw;
+        margin-right: 0vw;
+    }
+
+    .cer-text{
+        margin-left: -30vw;
+        font-size: 3vw;
+    }
+
+    .cha2 {
+        height: 40vw;
+        margin-top: 2.5vw;
+    }
+
+    .wrapper {
+        margin-top: 150px;
+    }
+
+    #change-sec {
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+
+    .iframe-container{
+        margin: 20vh 0 0 5.5%;
+    }
+
+    #com {
+        margin-top: 100px;
+    }
+
+}
+
+/*IPads*/
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        padding-bottom: 0px;
+    }
+
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    
+    .navbar:hover {
+        width: 16rem;
+    }
+    
+    .navbar:hover #small {
+        pointer-events: auto;
+    }
+
+    .navbar:hover #log {
+        pointer-events: auto;
+    }
+    
+    .nav-link {
+        pointer-events: none;
+    }
+    
+    #bar {
+        display: none;
+    }
+    
+    .dropdown-bar {
+        display: none;
+    }
+    
+    h1 {
+        margin-top: -40px;
+        font-size: 50px;
+    }
+    
+    .sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 350px;
+        margin-top: 100px;
+        margin-left: 10vw;
+        margin-right: 9vw;
+    }
+
+    #hac {
+        margin-top: -50px;
+    }
+    
+    #back {
+        margin-top: -20px;
+    }
+    
+    .wave1 {
+        height: 32vh;
+        width: 100vw;
+        margin-left: -20px;
+        margin-top: -17px;
+    }
+    
+    .wave1{
+        background-image: url(icons/waves1.svg);
+    }
+    
+    .wave2 {
+        height: 26.6vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    
+    .wave2{
+        background-image: url(icons/waves2.svg);
+    }
+    
+    .wave3 {
+        height: 32vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: -103px;
+    }
+    
+    .wave3{
+        background-image: url(icons/waves3.svg);
+    }
+    
+    .wave4 {
+        height: 26.6vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+    
+    .wave4{
+        background-image: url(icons/waves4.svg);
+    }
+
+    .wave5 {
+        height: 32vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: -103px;
+    }
+    
+    .wave5{
+        background-image: url(icons/waves5.svg);
+    }
+
+    .wave6 {
+        height: 25vh;
+        width: 100vw;
+        margin-left: -20px;
+        margin-top: 75px;
+    }
+    
+    .wave6 {
+        background-image: url(icons/waves6.svg);
+    }
+
+    .cha {
+        height: 25vw;
+        margin-top: 3vw;
+        margin-left: -0vw;
+    }
+
+    .cer {
+        height: 25vw;
+        margin-top: 3vw;
+        margin-right: 0vw;
+    }
+
+    .cer-text{
+        margin-left: -19.5vw;
+        font-size: 1.9vw;
+    }
+
+    .cha2 {
+        height: 25vw;
+        margin-top: 2.5vw;
+    }
+
+    .wrapper {
+        margin-top: 11.5vw;
+    }
+
+    #wrap-pass-reset {
+        width: 500px;
+    }
+
+    #wrap-form {
+        margin-left: 7vw;
+    }
+}
+
+/*normal Desktop*/
+
+@media only screen and (min-width: 1000px) {
+    main {
+        padding-bottom: 0px;
+    }
+
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    
+    .navbar:hover {
+        width: 16rem;
+    }
+    
+    .navbar:hover #small {
+        pointer-events: auto;
+    }
+
+    .navbar:hover #log {
+        pointer-events: auto;
+    }
+    
+    .nav-link {
+        pointer-events: none;
+    }
+    
+    #bar {
+        display: none;
+    }
+    
+    .dropdown-bar {
+        display: none;
+    }
+    
+    h1 {
+        margin-top: -40px;
+        font-size: 50px;
+    }
+    
+    .sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 350px;
+        margin-top: 100px;
+        margin-left: 10vw;
+        margin-right: 9vw;
+    }
+
+    #hac {
+        margin-top: -50px;
+    }
+    
+    #back {
+        margin-top: -100px;
+    }
+    
+    .wave1 {
+        height: 32vh;
+        width: 100vw;
+        margin-left: -20px;
+        margin-top: -17px;
+    }
+    
+    .wave1{
+        background-image: url(icons/waves1.svg);
+    }
+    
+    .wave2 {
+        height: 26.6vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    
+    .wave2{
+        background-image: url(icons/waves2.svg);
+    }
+    
+    .wave3 {
+        height: 32vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: -103px;
+    }
+    
+    .wave3{
+        background-image: url(icons/waves3.svg);
+    }
+    
+    .wave4 {
+        height: 26.6vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+    
+    .wave4{
+        background-image: url(icons/waves4.svg);
+    }
+
+    .wave5 {
+        height: 32vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-left: -20px;
+        margin-top: -103px;
+    }
+    
+    .wave5{
+        background-image: url(icons/waves5.svg);
+    }
+
+    .wave6 {
+        height: 25vh;
+        width: 100vw;
+        margin-left: -20px;
+        margin-top: 75px;
+    }
+    
+    .wave6 {
+        background-image: url(icons/waves6.svg);
+    }
+
+    .cha {
+        height: 14vw;
+        margin-top: 3vw;
+        margin-left: -32vw;
+    }
+    
+    .cer {
+        height: 14vw;
+        margin-top: -13.5vw;
+        margin-right: -35vw;
+    }
+    
+    .cer-text{
+        margin-left: 22.2vw;
+        font-size: 0.8vw;
+    }
+    
+    .cha2 {
+        height: 14vw;
+        margin-top: 2.5vw;
+    }
+
+    .wrapper {
+        margin-top: 9.5vw;
+    }
+
+    #wrap-pass-reset {
+        width: 700px;
+    }
+}
+
+
 
