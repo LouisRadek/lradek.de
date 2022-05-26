@@ -567,15 +567,16 @@ textarea::-webkit-scrollbar-track {
     }
 
     .dropdown {
-        position: relative;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-left: -2.4rem;
         margin-top: 0.057rem;
     }
     
     .dropdown-bar {
         display: none;
-        position: absolute;
+        /*position: absolute;*/
         background-color: #34343d;
         list-style: none;
         min-width: 17rem;
@@ -594,7 +595,7 @@ textarea::-webkit-scrollbar-track {
     }
     
     .dropdown-link-text {
-        position: absolute;
+        /*position: absolute;*/
     }
 
     .dropdown-item {
