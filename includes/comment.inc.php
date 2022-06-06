@@ -36,11 +36,11 @@ if (isset($_POST["submit"])) {
     $mail->isSMTP();
     $mail->Host = 'mail.gmx.net';
     $mail->SMTPAuth = "true";
-    $mail->Username = 'radek.forgottenpwd@gmx.de';
-    $mail->Password = 'Ue70/19!p^@J';
+    $mail->Username = '';
+    $mail->Password = '';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = '465';
-    $mail->SetFrom('radek.forgottenpwd@gmx.de');
+    $mail->SetFrom('');
     $mail->AddAddress($email);
     
     $mail->isHTML(true);

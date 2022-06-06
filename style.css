@@ -655,10 +655,6 @@ textarea::-webkit-scrollbar-track {
         margin-right: 9vw;
     }
 
-    #change-sec {
-        margin-left: 20px;
-    }
-
     #problem h1 {
         text-align: center;
     }
@@ -776,7 +772,7 @@ textarea::-webkit-scrollbar-track {
 
     #change-sec {
         margin-top: 80px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .iframe-container{
@@ -924,10 +920,6 @@ textarea::-webkit-scrollbar-track {
         margin-right: 9vw;
     }
 
-    #change-sec {
-        margin-left: 30px;
-    }
-
     #hac {
         margin-top: -50px;
     }
@@ -1010,6 +1002,10 @@ textarea::-webkit-scrollbar-track {
         height: 25vw;
         margin-top: 3vw;
         margin-left: -0vw;
+    }
+
+    #change-sec {
+        margin-left: 30px;
     }
 
     .cer {
