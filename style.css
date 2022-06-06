@@ -124,7 +124,6 @@ main {
 /*Profile*/
 
 #change-sec {
-    margin-left: 90px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -656,6 +655,10 @@ textarea::-webkit-scrollbar-track {
         margin-right: 9vw;
     }
 
+    #change-sec {
+        margin-left: 20px;
+    }
+
     #problem h1 {
         text-align: center;
     }
@@ -921,6 +924,10 @@ textarea::-webkit-scrollbar-track {
         margin-right: 9vw;
     }
 
+    #change-sec {
+        margin-left: 30px;
+    }
+
     #hac {
         margin-top: -50px;
     }
@@ -1091,6 +1098,10 @@ textarea::-webkit-scrollbar-track {
         margin-top: 100px;
         margin-left: 10vw;
         margin-right: 9vw;
+    }
+
+    #change-sec {
+        margin-left: 90px;
     }
 
     #hac {
@@ -1273,6 +1284,10 @@ textarea::-webkit-scrollbar-track {
         margin-top: 100px;
         margin-left: 10vw;
         margin-right: 9vw;
+    }
+
+    #change-sec {
+        margin-left: 30px;
     }
 
     #hac {

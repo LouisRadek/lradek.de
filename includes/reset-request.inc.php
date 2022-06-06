@@ -21,7 +21,7 @@ if (isset($_POST["reset-request-submit"])) {
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
 
-    $url = "https://www.localhost/Website/reset-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
+    $url = "http://www.lradek.de/reset-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
 
     $expires = date("U") + 1800;
 
@@ -65,15 +65,15 @@ if (isset($_POST["reset-request-submit"])) {
     
     $mail = new PHPMailer();
     $mail->isSMTP();
+    $mail->Host = 'mail.gmx.net';
     $mail->SMTPAuth = "true";
+    $mail->Username = 'radek.forgottenpwd@gmx.de';
+    $mail->Password = 'Ue70/19!p^@J';
     $mail->SMTPSecure = 'ssl';
-    $mail->Host = 'smtp.gmail.com';
     $mail->Port = '465';
-    $mail->isHTML(true);
-    $mail->Username = 'radek.forgottenpwd@gmail.com';
-    $mail->Password = 'Php<?Zo39a%!';
-    $mail->SetFrom('radek.forgottenpwd@gmail.com');
+    $mail->SetFrom('radek.forgottenpwd@gmx.de');
     $mail->AddAddress($to);
+    $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body = $message;
 

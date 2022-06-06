@@ -1,13 +1,15 @@
 <!DocType html>
 <html>
     <head>
-        <title>Louis Website</title>
+        <title>Home</title>
+        <link rel="icon" href="louis.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta name="description" content="This is a website about me Louis Radek and my programming projects">
         <meta name="author" content="Louis Radek">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/0700c14651.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
         <?php 

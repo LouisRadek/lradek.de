@@ -46,18 +46,18 @@ if (isset($_POST["submit"])){
     try {
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
+        $mail->Host = 'mail.gmx.net';
         $mail->SMTPAuth = "true";
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Host = 'smtp.gmail.com';
-        $mail->Port = '587';
-        $mail->isHTML(true);
-        $mail->Username = 'radek.forgottenpwd@gmail.com';
-        $mail->Password = 'Php<?Zo39a%!';
-        $mail->SetFrom('radek.forgottenpwd@gmail.com');
+        $mail->Username = 'radek.forgottenpwd@gmx.de';
+        $mail->Password = 'Ue70/19!p^@J';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = '465';
+        $mail->SetFrom('radek.forgottenpwd@gmx.de');
         $mail->AddAddress($email);
-
+        
         $verification_code = substr(md5(uniqid(rand(), true)), 6,6);
-
+        
+        $mail->isHTML(true);
         $mail->Subject = 'Email verification';
         $mail->Body = '<p>Your verification code is: <b style="font-size: 30px;">' . $verification_code . '</b></p>';
         $mail->send();
