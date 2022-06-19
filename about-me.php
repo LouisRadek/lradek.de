@@ -28,8 +28,11 @@
                     while competing with other programmers. 
                     There is also an index-tab on my website where you can see my progress in Hackerrank. 
                     In the future I want to gain more experience in coding through more projects. 
-                    I hope you like my website and give me a short feedback in the comment section. 
-                    Disclaimer: please don't open my website in Firefox and she is looking a lot prettier on Desktop.
+                    <br>
+                    This website was one of those projects and while developing it I learned a lot about HTML, CSS, JavaScript and PHP. Futhermore, I learned also more about Linux,
+                    because this website is hosted on my Raspberry Pi. In the furture I want to earn even more experience in web development espeacially with APIs, Databases 
+                    and Front-end Frameworks like React. 
+                    (later edited)
                 </div>
                  
             </section>

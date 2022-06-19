@@ -630,10 +630,6 @@ textarea::-webkit-scrollbar-track {
         transition: 300ms;
     }
     
-    #profile {
-        display: none;
-    }
-    
     #bar:hover .dropdown-bar {
         display: block;
     }
@@ -744,24 +740,12 @@ textarea::-webkit-scrollbar-track {
     }
 
     .cha {
-        height: 39vw;
+        height: 21.5vw;
         margin-top: 3vw;
-        margin-left: -0vw;
-    }
-
-    .cer {
-        height: 39vw;
-        margin-top: 3vw;
-        margin-right: 0vw;
-    }
-
-    .cer-text{
-        margin-left: -30vw;
-        font-size: 3vw;
     }
 
     .cha2 {
-        height: 40vw;
+        height: 19vw;
         margin-top: 2.5vw;
     }
 
@@ -896,10 +880,6 @@ textarea::-webkit-scrollbar-track {
         transition: 300ms;
     }
     
-    #profile {
-        display: none;
-    }
-    
     #bar:hover .dropdown-bar {
         display: block;
     }
@@ -999,28 +979,16 @@ textarea::-webkit-scrollbar-track {
     }
 
     .cha {
-        height: 25vw;
+        height: 18.5vw;
         margin-top: 3vw;
-        margin-left: -0vw;
     }
 
     #change-sec {
         margin-left: 30px;
     }
 
-    .cer {
-        height: 25vw;
-        margin-top: 3vw;
-        margin-right: 0vw;
-    }
-
-    .cer-text{
-        margin-left: -19.5vw;
-        font-size: 1.9vw;
-    }
-
     .cha2 {
-        height: 25vw;
+        height: 19vw;
         margin-top: 2.5vw;
     }
 
@@ -1038,7 +1006,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     .iframe-container{
-        margin: 10vh 0 0 5.5%;
+        margin: 16vh 0 0 5.5%;
     }
 }
 
@@ -1185,24 +1153,12 @@ textarea::-webkit-scrollbar-track {
     }
 
     .cha {
-        height: 14vw;
+        height: 10.5vw;
         margin-top: 3vw;
-        margin-left: -32vw;
-    }
-    
-    .cer {
-        height: 14vw;
-        margin-top: -13.5vw;
-        margin-right: -35vw;
-    }
-    
-    .cer-text{
-        margin-left: 22.2vw;
-        font-size: 0.8vw;
     }
     
     .cha2 {
-        height: 14vw;
+        height: 12vw;
         margin-top: 2.5vw;
     }
 
@@ -1219,6 +1175,7 @@ textarea::-webkit-scrollbar-track {
     }
 }
 
+/* Laptops and devices with low height */ 
 
 @media only screen and (max-height: 680px){
     main {
@@ -1240,6 +1197,7 @@ textarea::-webkit-scrollbar-track {
     
     .navbar-nav {
         flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .navbar:hover {
@@ -1371,24 +1329,13 @@ textarea::-webkit-scrollbar-track {
     }
 
     .cha {
-        height: 25vw;
+        height: 13.5vw;
         margin-top: 3vw;
         margin-left: -0vw;
     }
 
-    .cer {
-        height: 25vw;
-        margin-top: 3vw;
-        margin-right: 0vw;
-    }
-
-    .cer-text{
-        margin-left: -19.5vw;
-        font-size: 1.9vw;
-    }
-
     .cha2 {
-        height: 25vw;
+        height: 15.5vw;
         margin-top: 2.5vw;
     }
 
@@ -1406,7 +1353,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     .iframe-container{
-        margin: 25vh 0 0 5.5%;
+        margin: 16vh 0 0 5.5%;
     }
 
     .iframe-container iframe{
