@@ -1,4 +1,0 @@
-
-- security
-- ssl via getssl github
-? email in der mail nicht anzeigen bei verifying der mail und das prepared statement checken (muss nicht unbedingt gemacht werden wegen prepared statement)
