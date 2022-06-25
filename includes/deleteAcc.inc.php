@@ -6,6 +6,7 @@ if (isset($_POST["submit"])) {
     require_once 'functions.inc.php';
 
     $user = $_POST["user"];
+    check_string($user);
 
     $sql = "DELETE FROM users WHERE usersUid=?";
     $stmt = mysqli_stmt_init($conn);

@@ -50,8 +50,6 @@
                                 <input type="submit" name="reset-request-submit" value="reset your password by mail">
                             </div>
                         </form> 
-
-                        
                     </div>
                 </div> 
             </div>

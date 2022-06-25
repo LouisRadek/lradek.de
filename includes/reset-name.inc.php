@@ -3,9 +3,12 @@
 
 if (isset($_POST["submit"])) {
     require_once 'dbh.inc.php';
+    require_once 'functions.inc.php';
 
     $currentUser = $_POST["user"];
     $newUid = $_POST["new-name"];
+    check_string($currentUser);
+    check_string($newUid);
     session_destroy();
     session_start();
     $_SESSION["userUid"] = $newUid;

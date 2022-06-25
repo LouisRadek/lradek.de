@@ -5,16 +5,19 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
 if (isset($_POST["submit"])){
-    $email = $_POST["email-sign"];
-    $username = $_POST["uid"];
-    $pwd = $_POST["pwd-sign"];
-    $pwdRepeat = $_POST["pwdrepeat"]; 
-
     require 'phpMailer/src/Exception.php';
     require 'phpMailer/src/PHPMailer.php';
     require 'phpMailer/src/SMTP.php';
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
+    
+    $email = $_POST["email-sign"];
+    $username = $_POST["uid"];
+    $pwd = $_POST["pwd-sign"];
+    $pwdRepeat = $_POST["pwdrepeat"]; 
+    check_string($email);
+    check_string($username);
+
 
     if (emptyInputSignup($email, $username, $pwd, $pwdRepeat) !== false) {
         header("location: ../signup.php?error=emptyInput");
@@ -48,11 +51,11 @@ if (isset($_POST["submit"])){
         $mail->isSMTP();
         $mail->Host = 'mail.gmx.net';
         $mail->SMTPAuth = "true";
-        $mail->Username = '';
-        $mail->Password = '';
+        $mail->Username = 'radek.forgottenpwd@gmx.de';
+        $mail->Password = 'Ue70/19!p^@J';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = '465';
-        $mail->SetFrom('');
+        $mail->SetFrom('radek.forgottenpwd@gmx.de');
         $mail->AddAddress($email);
         
         $verification_code = substr(md5(uniqid(rand(), true)), 6,6);

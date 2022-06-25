@@ -7,6 +7,7 @@ use PHPMailer\PHPMailer\SMTP;
 if (isset($_POST["submit"])) {
 
     require_once "dbh.inc.php";
+    require_once "functions.inc.php";
     require 'phpMailer/src/Exception.php';
     require 'phpMailer/src/PHPMailer.php';
     require 'phpMailer/src/SMTP.php';
@@ -14,6 +15,8 @@ if (isset($_POST["submit"])) {
     $currentUser = $_POST["user"];
     $comment = $_POST["comment"]; 
     $email = "radek.forgottenpwd@gmail.com";
+    check_string($currentUser);
+    check_string($comment);
 
     if (!isset($_POST["restricted"])) {
         header("location: ../comment.php?error=none&time=restricted");
@@ -36,11 +39,11 @@ if (isset($_POST["submit"])) {
     $mail->isSMTP();
     $mail->Host = 'mail.gmx.net';
     $mail->SMTPAuth = "true";
-    $mail->Username = '';
-    $mail->Password = '';
+    $mail->Username = 'radek.forgottenpwd@gmx.de';
+    $mail->Password = 'Ue70/19!p^@J';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = '465';
-    $mail->SetFrom('');
+    $mail->SetFrom('radek.forgottenpwd@gmx.de');
     $mail->AddAddress($email);
     
     $mail->isHTML(true);

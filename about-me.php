@@ -33,6 +33,8 @@
                     because this website is hosted on my Raspberry Pi. In the furture I want to earn even more experience in web development espeacially with APIs, Databases 
                     and Front-end Frameworks like React. 
                     (later edited)
+                    <br>
+                    Please report security measures or bugs through a comment❤❤.
                 </div>
                  
             </section>
