@@ -58,7 +58,7 @@
                               echo "<style> #forgot {margin: 0px;} #log-btn {margin-top: 5px;}</style>";
                            } else if ($_GET["error"] == "notVerified") {
                               $email = $_GET["email"];
-                              echo '<div style="color:red; text-align:center;">Please verify your account <a style="color: red;" href="verify-email.php?email=' . $email . '">here</a></div>';
+                              echo '<div style="color:red; text-align:center;">Please verify your account <a style="color: red;" href="verify-email.php">here</a></div>';
                               echo "<style> #forgot {margin: 0px;} #log-btn {margin-top: 5px;}</style>";
                            } else if ($_GET["error"] == "stmtFailed") {
                               echo '<div style="color:red; text-align:center;">Something went wrong, try again!</div>';
@@ -113,8 +113,8 @@
                         </div>
                      </div>
                      <div style="margin-top: 15px; margin-left: 10px;">
-                        <a href="datenschutz.php" target="_blank">
-                        <input style="margin-right: 10px;" type="checkbox" name="link1" value="link" required>You agree with our policy and privacy</a>
+                        <input style="margin-right: 10px;" type="checkbox" name="link1" value="link" required>
+                        <a href="datenschutz.php" target="_blank">You agree with our policy and privacy</a>
                      </div>
                      <div id="availability"></div>
                      <div class="field btn" id="signupBt">

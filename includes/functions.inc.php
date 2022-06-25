@@ -128,7 +128,11 @@ function createUser($conn, $email, $username, $pwd, $verification_code) {
     mysqli_stmt_execute($stmt);
     $resultData = mysqli_stmt_get_result($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../verify-email.php?email=" . $email);
+    ini_set("session.cookie_httponly", 1);
+    ini_set("session.cookie_secure", 1);
+    session_start();
+    $_SESSION['email'] = $email;
+    header("location: ../verify-email.php");
     exit();
 }
 
@@ -153,7 +157,11 @@ function loginUser($conn, $username, $pwd) {
     }
 
     if($verified !== true) {
-        header("location: ../login.php?error=notVerified&email=" . $username);
+        ini_set("session.cookie_httponly", 1);
+        ini_set("session.cookie_secure", 1);
+        session_start();
+        $_SESSION['email'] = $username;
+        header("location: ../login.php?error=notVerified");
         exit();
     }
     

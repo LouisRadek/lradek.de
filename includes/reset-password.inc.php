@@ -19,7 +19,7 @@ if (isset($_POST["reset-password-submit"])) {
 
     require 'dbh.inc.php';
 
-    $sql = "SELECT *  FROM pwdreset WHERE pwdResetSelector=? AND pwdResetExpires >= ?;";
+    $sql = "SELECT * FROM pwdreset WHERE pwdResetSelector=? AND pwdResetExpires >= ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../email-pwd-reset.php?error=stmtFailed");

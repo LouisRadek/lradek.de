@@ -21,7 +21,6 @@
                     <p class="pass-reset-text">We have send you a verification code to your email address. Don't forget to check your spam folder, when the email isn't in your mailbox. Then type the code in the field below.</p>
                     <div class="form-inner">
                         <form action="includes/verify-email.inc.php" class="login" method="POST">
-                            <input type="hidden" name="email" value="<?php echo $_GET['email']; ?>" required>
                             <div class="field">
                                 <input type="text" name="verify-code" placeholder="Enter the verification code" required>
                             </div>

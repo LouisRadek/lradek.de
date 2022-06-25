@@ -3,7 +3,11 @@ if (isset($_POST["verify-submit"])) {
     
     require_once 'dbh.inc.php';
 
-    $email = $_POST['email'];
+    ini_set("session.cookie_httponly", 1);
+    ini_set("session.cookie_secure", 1);
+    session_start();
+
+    $email = $_SESSION['email'];
     $verification_code = $_POST['verify-code'];
 
     
@@ -18,7 +22,7 @@ if (isset($_POST["verify-submit"])) {
     mysqli_stmt_execute($stmt);
 
     if (mysqli_affected_rows($conn) == 0) {
-        header("location: ../verify-email.php?error=verifyFailed&email=" . $email);
+        header("location: ../verify-email.php?error=verifyFailed");
     } else {
         header("location: ../login.php?success=verification");
     }
