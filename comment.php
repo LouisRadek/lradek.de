@@ -34,7 +34,6 @@
                                 } else {
                             ?>
                                         <form action="includes/comment.inc.php" class="login" method="POST">
-                                            <input type="hidden" name="user" value="<?php echo $currentUser ?>">
                                             <input type="hidden" name="restricted" value="<?php echo $restriction ?>">
                                             <div class="field">
                                                 <textarea class="comment" name="comment" placeholder="Enter a comment..." cols="40" rows="4" required></textarea>

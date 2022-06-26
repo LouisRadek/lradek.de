@@ -27,7 +27,7 @@
                 <p class="change">Change username:</p>
                 <div class="form-inner">
                     <form action="includes/reset-name.inc.php" class="reset-name" method="POST">
-                        <input type="hidden" name="user" value="<?php echo $currentUser ?>">
+                        
                         <div class="field">
                             <input type="text" name="new-name" id="uid" placeholder="Enter new username" required>
                         </div>
@@ -37,6 +37,8 @@
                                     echo '<div style="color:red; text-align:center;">Something went wrong, try again!</div>';
                                 } else if ($_GET["error"] == "none") {
                                     echo '<div style="color: green; text-align:center;">Username changed!</div>';
+                                } else if ($_GET["error"] == "invalidUid") {
+                                    echo '<div style="color: red; text-align:center;">Invalid Username!</div>';
                                 }
                             }
                         ?>
@@ -47,7 +49,6 @@
                         </div>
                     </form>
                     <form action="includes/deleteAcc.inc.php" class="reset-name" method="POST">
-                        <input type="hidden" name="user" value="<?php echo $currentUser ?>">
                         <div style="margin: 10px; margin-top: 50px">
                             <input type="checkbox" name="delete" required>sure to delete your profile?
                         </div>

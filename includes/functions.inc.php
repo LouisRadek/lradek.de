@@ -178,11 +178,3 @@ function loginUser($conn, $username, $pwd) {
         exit();
     }
 }
-
-function check_string($my_string){
-    $regex = preg_match('[_!#$%^&*()<>?/|}{~:]', $my_string);
-    if($regex) {
-        header("location: ../index.php?error");
-        exit();
-    }
-}

@@ -5,8 +5,13 @@ if (isset($_POST["submit"])) {
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
-    $user = $_POST["user"];
-    check_string($user);
+    session_start();
+    $user = $_SESSION["userUid"];
+    
+    if (invalidUid($user) !== false) {
+        header("location: ../profile.php?error=invalidUid");
+        exit();
+    }
 
     $sql = "DELETE FROM users WHERE usersUid=?";
     $stmt = mysqli_stmt_init($conn);

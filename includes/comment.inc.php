@@ -12,11 +12,16 @@ if (isset($_POST["submit"])) {
     require 'phpMailer/src/PHPMailer.php';
     require 'phpMailer/src/SMTP.php';
 
-    $currentUser = $_POST["user"];
+    session_start();
+
+    $currentUser = $_SESSION["userUid"];
     $comment = $_POST["comment"]; 
     $email = "radek.forgottenpwd@gmail.com";
-    check_string($currentUser);
-    check_string($comment);
+
+    if (invalidUid($comment) !== false) {
+        header("location: ../comment.php?error=invalidComment");
+        exit();
+    }
 
     if (!isset($_POST["restricted"])) {
         header("location: ../comment.php?error=none&time=restricted");

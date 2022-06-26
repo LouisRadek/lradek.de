@@ -15,8 +15,6 @@ if (isset($_POST["submit"])){
     $username = $_POST["uid"];
     $pwd = $_POST["pwd-sign"];
     $pwdRepeat = $_POST["pwdrepeat"]; 
-    check_string($email);
-    check_string($username);
 
 
     if (emptyInputSignup($email, $username, $pwd, $pwdRepeat) !== false) {
