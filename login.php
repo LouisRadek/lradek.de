@@ -114,7 +114,7 @@
                      </div>
                      <div style="margin-top: 15px; margin-left: 10px;">
                         <input style="margin-right: 10px;" type="checkbox" name="link1" value="link" required>
-                        <a href="datenschutz.php" target="_blank">You agree with our policy and privacy</a>
+                        <a href="privacy.php" target="_blank">You agree with our policy and privacy</a>
                      </div>
                      <div id="availability"></div>
                      <div class="field btn" id="signupBt">

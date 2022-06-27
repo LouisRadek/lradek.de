@@ -75,7 +75,7 @@
                         </div>
                      </div>
                      <div style="margin-top: 15px; margin-left: 10px;">
-                        <a href="datenschutz.php" target="_blank">
+                        <a href="privacy.php" target="_blank">
                         <input style="margin-right: 10px;" type="checkbox" name="link1" value="link" required>You agree with our policy and privacy</a>
                      </div>
                      <?php 
