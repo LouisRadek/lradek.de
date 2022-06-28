@@ -19,20 +19,19 @@
             <section class="sec" id="back"> 
                 <h1>About me</h1>
                 <div class="text">
-                    Hi, my name is Louis Radek. I'm a German student who lives in Stuttgart. 
-                    After my graduation in 2023 I will most likely study computer science at university. 
-                    Since the Corona pandemic I'm really interested in computers and programming. 
-                    I love developing things and solving problems even though it can be really frustrating to find errors in the code. 
-                    It began all with my friend Max and a python-bot who automatically joined the meetings in home-schooling. 
-                    Due to him I also found the Website “Hackerrank” where you can improve your coding skills and learn different languages 
-                    while competing with other programmers. 
-                    There is also an index-tab on my website where you can see my progress in Hackerrank. 
-                    In the future I want to gain more experience in coding through more projects. 
+                    Hi, my name is Louis Radek. I'm a German student living in Stuttgart.
+                    After my graduation in 2023 I will most likely study computer science at university.
+                    Since the Corona pandemic, I'm really interested in computers and programming.
+                    I love developing things and solving problems, even though it can be really frustrating to find errors in the code.
+                    It began all with my friend Max🥰 and a python-bot who automatically joined every meeting in home-schooling.
+                    Due to him, I also found the Website “Hackerrank” where you can improve your coding skills and learn different languages
+                    while competing with other programmers.
+                    There is also a page on my website, where you can see my progress on Hackerrank.
+                    In the future, I want to gain more experience in coding through more projects.
                     <br>
-                    This website was one of those projects and while developing it I learned a lot about HTML, CSS, JavaScript and PHP. Futhermore, I learned also more about Linux,
-                    because this website is hosted on my Raspberry Pi. In the furture I want to earn even more experience in web development espeacially with APIs, Databases 
-                    and Front-end Frameworks like React. 
-                    (later edited)
+                    This website was one of those projects and while developing, I learned a lot about HTML, CSS, JavaScript and PHP. On the way, I also learned more about Linux and web servers,
+                    because this website is hosted on my Raspberry Pi. I look forward to earning even more experience in web development especially with APIs, Databases
+                    and Front-end Frameworks like React.
                     <br>
                     Please report security measures or bugs through a comment❤❤.
                 </div>
