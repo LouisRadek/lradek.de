@@ -115,6 +115,10 @@ body {
         animation: fadeIn 1500ms;
     }
 
+    .dropdown-link-text {
+        text-decoration: none;
+    }
+
 main {
     margin-top: 0rem;
     margin-left: 5rem;
