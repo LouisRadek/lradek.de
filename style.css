@@ -317,6 +317,7 @@ input[type="radio"]{
     height: 50px;
     width: 100%;
     margin-top: 20px;
+    display: inline-flex;
 }
 
 .form-inner form .field input{
@@ -454,8 +455,8 @@ form .btn input[type="submit"]{
 #eye {
     height: 18px;
     width: 18px;
-    margin-top: -10.6%;
-    transform: translate(1650%, 0);
+    margin-top: 15px;
+    margin-left: -35px;
     cursor: pointer;
 }
 
@@ -755,7 +756,6 @@ textarea::-webkit-scrollbar-track {
 
     .wrapper {
         margin-top: 125px;
-        margin-right: 1px;
     }
 
     #change-sec {
@@ -1005,7 +1005,6 @@ textarea::-webkit-scrollbar-track {
     }
 
     #wrap-form {
-        margin-left: 7vw;
         margin-top: 14vh;
     }
 
@@ -1352,7 +1351,6 @@ textarea::-webkit-scrollbar-track {
     }
 
     #wrap-form {
-        margin-left: 7vw;
         margin-top: 80px;
     }
 

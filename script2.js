@@ -3,16 +3,29 @@ const loginForm = document.querySelector("form.login");
 const loginBtn = document.querySelector("label.login");
 const signupBtn = document.querySelector("label.signup");
 const signupLink = document.querySelector("form .signup-link a");
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const eye1 = document.querySelector(".eye1");
+const eye2 = document.querySelector(".eye2");
+const eye3 = document.querySelector(".eye3");
 loginForm.style.marginLeft = "-50%";
 loginText.style.marginLeft = "-50%";
 signupBtn.click();
-signupBtn.onclick = (()=>{
+eye1.style.visibility = "hidden";
+signupBtn.onclick = (async()=>{
     loginForm.style.marginLeft = "-50%";
     loginText.style.marginLeft = "-50%";
+    eye1.style.visibility="hidden";
+    await sleep(350);
+    eye2.style.visibility="visible";
+    eye3.style.visibility="visible";
 });
-loginBtn.onclick = (()=>{
+loginBtn.onclick = (async()=>{
     loginForm.style.marginLeft = "0%";
     loginText.style.marginLeft = "0%";
+    eye2.style.visibility="hidden";
+    eye3.style.visibility="hidden";
+    await sleep(250);
+    eye1.style.visibility="visible"
 });
 signupLink.onclick = (()=>{
     signupBtn.click();
