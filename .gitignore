@@ -1,3 +1,5 @@
 *.txt
 *.log
 *.py
+*.json
+/node_modules
