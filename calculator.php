@@ -7,6 +7,7 @@
         <meta name="description" content="This is a website about me Louis Radek and my programming projects">
         <meta name="author" content="Louis Radek">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/style.css">
         <link rel="icon" href="louis.png">
     </head>
     <body>
@@ -18,11 +19,11 @@
     <p id="soon">
         Coming soon ...
     </p>  
-    <div id="button"></div>
+    <div id="calculator"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script scr="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="button.js"></script>
+    <script src="index.js"></script>
 </main>
     </body>
 </html>

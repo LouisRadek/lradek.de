@@ -1,0 +1,26 @@
+#calculator {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.calcContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.output {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: white;
+    margin: 10px;
+}
+
+.calcContainer button {
+    border-color: #141418;
+    background: #202025;
+}
+
+
