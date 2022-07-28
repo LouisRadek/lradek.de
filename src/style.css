@@ -1,26 +1,34 @@
 #calculator {
     display: flex;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 150px;
 }
 
 .calcContainer {
     display: grid;
-    grid-template-columns: repeat(4, 65px);
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 60px);
     grid-row-gap: 5px;
     grid-column-gap: 5px;
 }
 
 .output {
+    color: white;
+    word-break: break-all;
+}
+
+.output-container {
     grid-column-start: 1;
     grid-column-end: -1;
-    color: white;
-    margin: 10px;
+    background: #202025;
+    padding: 5px;
 }
 
 .calcContainer button {
     border-color: #141418;
     background: #202025;
+    text-align: center;
+    font-size: 21px;
 }
 
 
