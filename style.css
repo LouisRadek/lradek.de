@@ -382,7 +382,7 @@ form .btn .btn-layer{
     left: -100%;
     background: -webkit-linear-gradient(right, #7101d1, #800fdc, #8e1ae8, #9d23f3, #ac2cff);
     border-radius: 5px;
-    transition: all 0.4s ease;;
+    transition: all 0.4s ease;
 }
 
 form .btn:hover .btn-layer{

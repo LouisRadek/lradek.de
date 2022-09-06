@@ -9,7 +9,6 @@
         <meta name="author" content="Louis Radek">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/0700c14651.js" crossorigin="anonymous"></script>
-        
     </head>
     <body>
         <?php 

@@ -50,7 +50,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                     try {
                         var term = eval(_this.state.output);
                         term = Math.round(Number(term) * 1000000) / 1000000;
-                        if (isNaN(term)) {
+                        if (term == NaN) {
+                            console.log("triggered");
                             _this.setState({ output: "Empty inputfield" });
                             return;
                         }
