@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DocType html>
 <html>
     <head>

@@ -1,9 +1,3 @@
-<?php
-    ini_set("session.cookie_httponly", 1);
-    ini_set("session.cookie_secure", 1);
-    session_start();
-?>
-
 <nav class="navbar" tabindex="0">
             <ul class="navbar-nav">
                     <li class="nav-item" id="bar">
