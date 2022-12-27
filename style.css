@@ -476,6 +476,7 @@ form .btn input[type="submit"]{
     background: #34343d;
     border-radius: 5px;
     padding: 4px;
+    padding-bottom: 150px;
     resize: none;
     margin-top: 15px;
     border-style: solid;
