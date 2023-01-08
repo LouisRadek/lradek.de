@@ -22,23 +22,30 @@
             <section class="sec" id="back"> 
                 <h1>About me</h1>
                 <div class="text">
-                    Hi, my name is Louis Radek. I'm a German student living in Stuttgart.
-                    After my graduation in 2023 I will most likely study computer science at university.
-                    Since the Corona pandemic, I'm really interested in computers and programming.
-                    I love developing things and solving problems, even though it can be really frustrating to find errors in the code.
-                    It began all with my friend Max🥰 and a python-bot who automatically joined every meeting in home-schooling.
-                    Due to him, I also found the Website “Hackerrank” where you can improve your coding skills and learn different languages
-                    while competing with other programmers.
-                    There is also a page on my website, where you can see my progress on Hackerrank.
+                    Hi, my name is Louis Radek. I'm a German student living in Stuttgart. 
+                    After my graduation in 2023 I will most likely study computer science at university. 
+                    Since the Corona pandemic, I'm really interested in computers and programming. 
+                    I love developing things and solving problems, even though it can be really frustrating to find errors in the code. 
+                    It all began with my friend Max🥰 and a python-bot which automatically joined every meeting in home-schooling. 
+                    Due to him, I also found the Website “Hackerrank” 
+                    where you can improve your coding skills and learn different programming languages while competing with other programmers. 
                     In the future, I want to gain more experience in coding through more projects.
                     <br>
-                    This website was one of those projects and while developing, I learned a lot about HTML, CSS, JavaScript and PHP. On the way, I also learned more about Linux and web servers,
-                    because this website is hosted on my Raspberry Pi. I look forward to earning even more experience in web development especially with APIs, Databases
-                    and Front-end Frameworks like React.
+                    This website was one of those projects and while developing, I learned a lot about HTML, CSS, JavaScript and PHP. 
+                    On the way, I also learned more about Linux and web servers, because this website is hosted on my Raspberry Pi. 
+                    I look forward to earning even more experience in web development especially with APIs, Databases and Front-end Frameworks like React.
                     <br>
                     Please report security measures or bugs through a comment❤❤.
+                    <br>
+                    Update 08.01.23:
+                    Now 7 months after this amazing website project which arouse my passion for programming, I achieved a few of my goals. 
+                    I landed a job in a very cool IT company <a target="_blank" href="https://itplusx.de">(ITplusX)</a> where I learned a lot about git and clean coding. 
+                    Furthermore, I got a lot better in web development especially with the frameworks NuxtJS and VueJS which are really amazing. 
+                    In my free time I also got in touch with networking and docker. 
+                    Because of the supremacy of docker microservices I migrated this website to docker with docker-compose 
+                    and experimented a bit with other containers like a custom <a target="_blank" href="https://search.lradek.de">search engine</a> and a selfhosted <a target="_blank" href="https://vaultwarden.lradek.de">Vaultwarden</a> (Rust implementation of Bitwarden). 
+                    Right now I am working on my own cloud with the Nuxt and Nest frameworks.
                 </div>
-                 
             </section>
             <div class="wave2"></div>     
             <div class="wave3"></div>         
